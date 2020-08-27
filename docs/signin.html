@@ -15,7 +15,18 @@
     <div>
       password: <input type="password" id="password" />
     </div>
-    <button type="submit" value="submit" >submit</button>
+    <!-- <button type="submit" value="submit" >submit</button> -->
+    <input type="submit" value="submit" />
   </form>
+
+
+  <script>
+    document.querySelector('form').addEventListener('submit',(e) =>{
+      e.preventDefault()
+      window.location.href = 'signin_ok.html'
+    })
+
+
+  </script>
 </body>
 </html>
